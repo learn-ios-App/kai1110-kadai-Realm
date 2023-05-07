@@ -12,6 +12,7 @@ struct kai1110_kadai_RealmApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(FruitsData())
         }
     }
 }
