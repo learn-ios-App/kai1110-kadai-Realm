@@ -20,12 +20,19 @@ struct ContentView: View {
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button(action: {
-                        fruitViewModel.addFruits()
+                        fruitViewModel.didTapPlusButton()
                     }) {
                         Image(systemName: "plus")
                     }
                 }
             }
+        }
+        .sheet(isPresented: $fruitViewModel.isAddView) {
+            AddFruitView(save:  { text in
+                fruitViewModel.didTapAddViewSaveButton(text: text)
+            }, cancel: {
+                fruitViewModel.didTapAddViewCancelButton()
+            })
         }
     }
 }

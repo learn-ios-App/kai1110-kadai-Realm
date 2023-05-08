@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8B0FAC5F2A08FB2600F23A4A /* AddFruitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0FAC5E2A08FB2600F23A4A /* AddFruitView.swift */; };
+		8B0FAC612A093AD600F23A4A /* EditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0FAC602A093AD600F23A4A /* EditView.swift */; };
 		8B185BEC2A077001009EACE8 /* kai1110_kadai_RealmApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B185BEB2A077001009EACE8 /* kai1110_kadai_RealmApp.swift */; };
 		8B185BEE2A077001009EACE8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B185BED2A077001009EACE8 /* ContentView.swift */; };
 		8B185BF02A077002009EACE8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B185BEF2A077002009EACE8 /* Assets.xcassets */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8B0FAC5E2A08FB2600F23A4A /* AddFruitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFruitView.swift; sourceTree = "<group>"; };
+		8B0FAC602A093AD600F23A4A /* EditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditView.swift; sourceTree = "<group>"; };
 		8B185BE82A077001009EACE8 /* kai1110-kadai-Realm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "kai1110-kadai-Realm.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B185BEB2A077001009EACE8 /* kai1110_kadai_RealmApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kai1110_kadai_RealmApp.swift; sourceTree = "<group>"; };
 		8B185BED2A077001009EACE8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -96,6 +100,8 @@
 			children = (
 				8B185BED2A077001009EACE8 /* ContentView.swift */,
 				8B185C022A0775DE009EACE8 /* ListRow.swift */,
+				8B0FAC5E2A08FB2600F23A4A /* AddFruitView.swift */,
+				8B0FAC602A093AD600F23A4A /* EditView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -173,6 +179,8 @@
 				8B185BFA2A077010009EACE8 /* Fruit.swift in Sources */,
 				8B185BEE2A077001009EACE8 /* ContentView.swift in Sources */,
 				8B185BFF2A077147009EACE8 /* FruitsData.swift in Sources */,
+				8B0FAC5F2A08FB2600F23A4A /* AddFruitView.swift in Sources */,
+				8B0FAC612A093AD600F23A4A /* EditView.swift in Sources */,
 				8B185BEC2A077001009EACE8 /* kai1110_kadai_RealmApp.swift in Sources */,
 				8B185C032A0775DE009EACE8 /* ListRow.swift in Sources */,
 			);

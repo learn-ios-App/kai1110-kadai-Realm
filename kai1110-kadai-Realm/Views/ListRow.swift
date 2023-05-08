@@ -13,9 +13,7 @@ struct ListRow: View {
     var body: some View {
         HStack {
             Button(action: {
-                print("ボタンが押された")
                 fruitViewModel.didTapCheckMark(index: index)
-                print(fruitViewModel.fruitsList[index].isCheck)
             }) {
                 Image(
                     systemName: fruitViewModel.fruitsList[index].isCheck
@@ -24,6 +22,19 @@ struct ListRow: View {
                 )
             }
             Text(fruitViewModel.fruitsList[index].name)
+            Spacer()
+            Button(action: {
+                fruitViewModel.didTapIButton()
+            }) {
+                Image(systemName: "i.circle")
+                    .foregroundColor(.blue)
+            }
+            .buttonStyle(BorderlessButtonStyle())
+        }
+        .sheet(isPresented: $fruitViewModel.isEditView) {
+            EditView(text: fruitViewModel.fruitsList[index].name,
+                     save: { text in fruitViewModel.didTapEditViewSaveButton(text: text, index: index) },
+                     cancel: { fruitViewModel.didTapEditViewCancelButton() })
         }
     }
 }
